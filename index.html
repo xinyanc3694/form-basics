@@ -14,22 +14,32 @@
     <div class="container">
         <h1>Form Basics</h1>
         <hr>
+        <h2>Ice-Cream Form</h2>
         <form action="http://www.w3schools.com/tags/demo_form.asp" method="get">
-
-            Name:
-            <input type="text" name="name"><br> E-mail:
-            <input type="email" name="email"><br>
-
-            <!--add your own inputs below-->
-
-
-
-
-
-
-
-
-            <!--add your own inputs above-->
+            Name:<br>
+            <input type="text" name="first-name" placeholder="First Name" required><br>
+            <input type="text" name="last-name" placeholder="Last Name" required><br>
+            E-mail:
+            <input type="email" name="email" placeholder="mail"><br>
+            Phone number:
+            <input type="tel" name="phone-number" placeholder="Phone #"><br>
+            Flavor:
+            <input type= "radio" name="flavor" value= "chocolate">Chocolate
+            <input type= "radio" name="flavor" value= "vanilla">Vanilla
+            <input type= "radio" name="flavor" value= "strawberry">Strawberry<br>
+            Scoop(s):
+            <select name="scoops">
+                <option value="1" selected> 1 </option>
+                <option value="2" selected> 2 </option>
+                <option value="3" selected> 3 </option>
+            </select><br>
+            Topping(s):
+            <input type= "checkbox" name="topping-1" value= "caramel">Caramel
+            <input type= "checkbox" name="topping-2" value= "hot-fudge">Hot fudge
+            <input type= "checkbox" name="topping-3" value= "marshmallow">Marshmallow<br>
+            Comments:<br>
+            <textarea name= "message"></textarea><br>
+            
 
             <input class="blue-button" type="submit" value="Submit">
         </form>
